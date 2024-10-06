@@ -1,55 +1,45 @@
-import React from 'react'
+import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
-    <div>
-      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer> */}
-    </div>
-  )
+      <footer className="bg-gray-800 text-gray-400 py-4">
+
+        <ul className="flex gap-6 flex-wrap items-center justify-center mb-4">
+          <li>
+            <Link href="https://facebook.com" target="_blank">
+              <Facebook className="p-2 w-10 h-10 
+              flex justify-center items-center text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible"  />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://instagram.com" target="_blank">
+              <Instagram className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://linkedin.com" target="_blank">
+              <Linkedin className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://twitter.com" target="_blank">
+              <Twitter className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://github.com" target="_blank">
+              <Github className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80
+              bg-themegray rounded-full overflow-visible" />
+            </Link>
+          </li>
+        </ul>
+
+        <div className="text-center text-sm text-gray-500">
+          <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+        </div>
+      </footer>
+  );
 }
+

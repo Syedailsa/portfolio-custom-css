@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header>
+    <header className='bg-gray-800'>
         <div className='md:flex justify-between items-center m-10 mb-2 text-themewhite'>
         <div className=''>
             {/* logo */}
-            <p className='text-4xl mb-3'><big className='font-serif font-semibold text-themeblue'>P</big>ortfolio</p>
+            <p className='text-4xl mb-3'><big className='font-serif font-semibold text-themeblue'>Ilsa</big> <big className='font-serif font-semibold'>Ubaid</big></p>
         </div>
       
         <nav>
@@ -25,7 +25,7 @@ export default function Header() {
             </ul>
         </nav>
         </div>
-        <hr className='border-t-2 border-themegray' />
+        <hr />
     </header>
   )
 }

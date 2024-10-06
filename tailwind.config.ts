@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+			button: '#393E46',
 			themewhite:'#EEEEEE',
 			themeblue:'#00ADB5',
 			themeblack:'#222831',
