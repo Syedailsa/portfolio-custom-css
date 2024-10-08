@@ -1,9 +1,15 @@
+"use client"
+
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
+  
+  const pathname = usePathname()
+
   return (
-    <header className='bg-gray-800'>
+    <header className='bg-gray-800 select-none'>
         <div className='md:flex justify-between items-center m-10 ml-2 pt-1 mb-2 text-themewhite'>
         <div className=''>
             {/* logo */}
@@ -14,16 +20,20 @@ export default function Header() {
             {/* navbar */}
             <ul className='flex gap-5 md:gap-10 md:text-xl font-medium'>
                 <li>
-                   <Link href='/' className='hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] hover:font-semibold'>Home</Link>
+                   <Link href='/' className={`hover:font-semibold
+                    ${pathname === '/' ? 'drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] font-semibold' : ''}`}>Home</Link>
                 </li>
                 <li>
-                    <Link href='/about' className='hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] hover:font-semibold'>About Me</Link>
+                    <Link href='/about' className={`hover:font-semibold
+                    ${pathname === '/about' ? 'drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] font-semibold' : ''}`}>About Me</Link>
                 </li>
                 <li>
-                    <Link href='/projects' className='hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] hover:font-semibold'>Projects</Link>
+                    <Link href='/projects' className={`hover:font-semibold
+                    ${pathname === '/projects' ? 'drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] font-semibold' : ''}`}>Projects</Link>
                 </li>
                 <li>
-                    <Link href='/contact' className='hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] hover:font-semibold'>Contact</Link>
+                    <Link href='/contact' className={`hover:font-semibold
+                    ${pathname === '/contact' ? 'drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] font-semibold' : ''}`}>Contact</Link>
                 </li>
                 
             </ul>

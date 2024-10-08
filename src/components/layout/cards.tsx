@@ -42,7 +42,7 @@ export interface IProject {
     {
         title: 'Figma Design Clone',
       description:
-        'Figma design pixel perfect and responsive clone',
+        'Figma design pixel perfect and responsive clone built on plain Next.Js, Tailwind CSS',
       image: {
         src: '/figma.png',  
         alt: 'figma clone', 
