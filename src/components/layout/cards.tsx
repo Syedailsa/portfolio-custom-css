@@ -31,7 +31,7 @@ export interface IProject {
       description:
         'Creative and responsive pookie themed calculator built on plain HTML, CSS and Typescript',
       image: {
-        src: '/calci.png',  
+        src: '/calci-project.png',  
         alt: 'Pookie Themed Calculator Screenshot', 
         width: 400,  
         height: 300,  
@@ -44,7 +44,7 @@ export interface IProject {
       description:
         'Figma design pixel perfect and responsive clone built on plain Next.Js, Tailwind CSS',
       image: {
-        src: '/figma.png',  
+        src: '/figma-project.png',  
         alt: 'figma clone', 
         width: 400,  
         height: 300,  
