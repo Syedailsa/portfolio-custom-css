@@ -25,5 +25,5 @@ footer {
 }
 
 .custom-bg{
-  @apply min-h-screen bg-[url('/bg-squareDoodle.png')] bg-repeat bg-[length:33.33%_50%] bg-top
+  @apply min-h-screen bg-[url('/bg-squareDoodle.png')] bg-repeat md:bg-[length:33.33%_50%] bg-top
 }

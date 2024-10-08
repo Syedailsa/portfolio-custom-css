@@ -1,27 +1,11 @@
 "use client"
 
 import Image from 'next/image';
-import { ChangeEvent, useState } from 'react';
 import Links from '@/components/layout/links';
 import Contactform from '@/components/layout/contactform';
 
 
 export default function Contact() {
-  // State for form data (optional if you plan to process the form later)
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  function HandleChange(event: ChangeEvent<HTMLInputElement>): void {
-    throw new Error('Function not implemented.');
-  }
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = e.target;
-      setFormData({ ...formData, [name]: value });
-    };
 
   return (
     <section className="text-themewhite py-12">

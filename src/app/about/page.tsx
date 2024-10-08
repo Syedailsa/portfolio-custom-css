@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="mt-11 px-5 md:m-19 lg:grid grid-cols-2 md:place-items-center md:pl-28 md:pr-28">
       
-    <div className="mb-28 sm:mb-16">
+    <div className="lg:pl-24 mb-20 sm:mb-28">
       <div className="flex gap-2 text-6xl font-semibold mb-7">
         <h2 className="text-themewhite">About</h2>
         <h2 className="text-themeblue ">Me</h2>

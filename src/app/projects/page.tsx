@@ -1,22 +1,27 @@
 import React from "react";
-import Card from "@/components/layout/card";
+import { Cards,pData } from "@/components/layout/cards";
+
 
 function Projects() {
+
   return (
     <section className="custom-bg">
-      
-      <div>
-        <div className="flex mb-7 gap-2 text-6xl font-semibold">
+        <div className="sm:grid grid-cols-1 justify-start items-center">
         {/* top */}
+          <div className="flex justify-start p-6 sm:pl-20 m-0 pb-0 gap-2 text-4xl md:text-6xl font-semibold">
           <h2 className="text-themewhite">My recect </h2>
           <br />
           <h2 className="text-themeblue ">work !</h2>
-        </div>
+          </div>
+        
 
-        <div>
-          {/* cards main */}
+          <div className="pb-5 md:pb-0 md:flex">
+          {/* projects cards main */}
+            <Cards pData={pData} />
+          </div>
+
+
         </div>
-      </div>
     </section>
   );
 }
