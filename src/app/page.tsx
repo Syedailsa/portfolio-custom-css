@@ -1,6 +1,6 @@
 import About from "./about/page";
 import Contact from "./contact/page";
-import Body from "@/app/body/page";
+import Body from "./body/page";
 import Projects from "./projects/page";
 
 export default function Home() {

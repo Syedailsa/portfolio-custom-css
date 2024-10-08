@@ -28,7 +28,7 @@ export function DialogDemo() {
             Get FREE consultation now !
           </DialogTitle>
           <DialogDescription className="pt-2">
-            Help's to build FAST, SECURE and INTERACTIVE websites
+            Help&apos;s to build FAST, SECURE and INTERACTIVE websites
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 text-white">
