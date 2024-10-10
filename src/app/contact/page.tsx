@@ -22,7 +22,7 @@ export default function Contact() {
               alt="Person walking on graph"
               width={250}
               height={150}
-              className="mx-auto lg:mx-0"
+              className="mx-auto lg:mx-0 no-select"
             />
           </div>
         </div>

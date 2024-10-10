@@ -61,14 +61,14 @@ export function Cards({ pData }:{ pData: IProject[] }) {
         {pData.map((project) => {
 
             return(
-            <div className="flex justify-center" key={project.title}>
+            <div className="flex justify-center  select-none" key={project.title}>
               <Card className="w-[350px] text-themewhite bg-themegray bg-opacity-40 hover:bg-opacity-80 mb-4">
                 <CardHeader></CardHeader>
                 <CardContent>
 
                   <div className="grid w-full items-start gap-4">
                     
-                  <Link href={project.vercelurl}><Image src={project.image.src} alt={project.image.alt} height={project.image.height} width={project.image.width} className="rounded-xl" /> </Link>
+                  <Link href={project.vercelurl}><Image src={project.image.src} alt={project.image.alt} height={project.image.height} width={project.image.width} className="rounded-xl no-select" /> </Link>
                    
                   </div>
                   <CardTitle className="mt-4 mb-4">{project.title}</CardTitle>

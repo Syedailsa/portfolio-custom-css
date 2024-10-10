@@ -9,28 +9,28 @@ export default function Footer() {
         <ul className="flex gap-6 flex-wrap items-center justify-center mb-4">
           <li>
             <Link href="https://facebook.com" target="_blank">
-              <Facebook className="p-2 w-10 h-10 
+              <Facebook className="p-2 h-8 w-8 sm:w-10 sm:h-10 
               flex justify-center items-center text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible"  />
             </Link>
           </li>
           <li>
             <Link href="https://instagram.com" target="_blank">
-              <Instagram className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
+              <Instagram className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>
           <li>
             <Link href="https://linkedin.com" target="_blank">
-              <Linkedin className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
+              <Linkedin className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>
           <li>
             <Link href="https://twitter.com" target="_blank">
-              <Twitter className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
+              <Twitter className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>
           <li>
             <Link href="https://github.com" target="_blank">
-              <Github className="p-2 w-10 h-10 text-themewhite hover:text-opacity-80
+              <Github className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80
               bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>

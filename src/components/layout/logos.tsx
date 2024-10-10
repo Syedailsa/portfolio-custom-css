@@ -10,6 +10,7 @@ export default function Logos() {
           alt="Next.js Logo"
           width={80}
           height={20}
+          className='no-select'
         />
       </div>
       <div className="w-20">
@@ -18,6 +19,7 @@ export default function Logos() {
           alt="Tailwind CSS Logo"
           width={80}
           height={20}
+          className='no-select'
         />
       </div>
       <div className="w-20">
@@ -26,6 +28,7 @@ export default function Logos() {
           alt="Sanity Logo"
           width={80}
           height={20}
+          className='no-select'
         />
       </div>
       <div className="w-20">
@@ -34,6 +37,7 @@ export default function Logos() {
           alt="TypeScript Logo"
           width={80}
           height={20}
+          className='no-select'
         />
       </div>
       <div className="w-20">
@@ -42,6 +46,7 @@ export default function Logos() {
           alt="NextAuth Logo"
           width={80}
           height={20}
+          className='no-select'
         />
       </div>
     </div>

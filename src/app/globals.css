@@ -24,6 +24,12 @@ footer {
   flex-shrink: 0;
 }
 
+.no-select {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none; 
+}
+
 .custom-bg{
   @apply min-h-screen bg-[url('/bg-squareDoodle.png')] bg-repeat md:bg-[length:33.33%_50%] bg-top
 }
