@@ -19,7 +19,7 @@ export default function Header() {
       
         <nav className='hidden md:block'>
             {/* navbar */}
-            <ul className='flex gap-5 md:gap-10 md:text-xl font-medium no-select'>
+            <ul className='flex gap-5 md:gap-10 md:text-xl font-medium select-none'>
                 <li>
                    <Link href='/' className={`hover:font-semibold
                     ${pathname === '/' ? 'drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] font-semibold' : ''}`}>Home</Link>
