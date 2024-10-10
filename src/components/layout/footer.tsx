@@ -8,28 +8,28 @@ export default function Footer() {
 
         <ul className="flex gap-6 flex-wrap items-center justify-center mb-4">
           <li>
-            <Link href="https://facebook.com" target="_blank">
+            <Link href="https://www.facebook.com/profile.php?id=100012511305631&mibextid=LQQJ4d" target="_blank">
               <Facebook className="p-2 h-8 w-8 sm:w-10 sm:h-10 
               flex justify-center items-center text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible"  />
             </Link>
           </li>
           <li>
-            <Link href="https://instagram.com" target="_blank">
+            <Link href="https://www.instagram.com/syeda__ilsa/profilecard/?igsh=MWEzdzQ4azZuMHo2ZA==" target="_blank">
               <Instagram className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>
           <li>
-            <Link href="https://linkedin.com" target="_blank">
+            <Link href="www.linkedin.com/in/ilsa-ubaid-0a7950272" target="_blank">
               <Linkedin className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>
           <li>
-            <Link href="https://twitter.com" target="_blank">
+            <Link href="https://x.com/ilsaubaid" target="_blank">
               <Twitter className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80 bg-themegray rounded-full overflow-visible" />
             </Link>
           </li>
           <li>
-            <Link href="https://github.com" target="_blank">
+            <Link href="https://github.com/Syedailsa" target="_blank">
               <Github className="p-2 h-8 w-8 sm:w-10 sm:h-10 text-themewhite hover:text-opacity-80
               bg-themegray rounded-full overflow-visible" />
             </Link>
