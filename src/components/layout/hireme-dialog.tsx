@@ -1,4 +1,5 @@
 'use client'
+/* eslint-disable react/no-unescaped-entities */
 
 import '@/app/styles/hireme.css'
 import { useState } from "react";
