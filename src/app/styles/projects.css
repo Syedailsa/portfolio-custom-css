@@ -1,0 +1,45 @@
+.main{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: start;
+    font-weight: bold;
+    font-size: 40px;
+    gap: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+@media screen and (min-width: 250px) and (max-width: 420px) {
+    .text{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .text{
+        font-size: 30px;
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    
+}

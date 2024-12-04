@@ -1,0 +1,44 @@
+.footer{
+    background-color: #1f2937;
+    color: #9ca3af;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ul{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.icon{
+    padding: 8px;
+    height: 32px;
+    width: 32px;
+    color: #eeeeee;
+    background-color: #393e46;
+    border-radius: 9999px;
+    overflow: visible;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b7280;
+}
+
+.icon:hover{
+    opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+    .icon{
+        height: 40px;
+        width: 40px;
+    }
+}

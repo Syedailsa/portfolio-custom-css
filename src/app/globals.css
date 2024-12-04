@@ -1,23 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.layout{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #222831;
+}
 
-html, body {
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
+  min-height: 100%;
+  background-color: #222831;
   margin: 0;
   padding: 0;
 }
 
-#__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
   flex: 1;
+}
+
+.text-white{
+  color: #eeeeee;
+}
+
+.text-blue{
+  color: #00ADB5;
 }
 
 footer {
@@ -31,5 +44,14 @@ footer {
 }
 
 .custom-bg{
-  @apply min-h-screen bg-[url('/bg-squareDoodle.png')] bg-repeat md:bg-[length:33.33%_50%] bg-top
+  min-height: 100vh;
+  background-image: url('/bg-squareDoodle.png');
+  background-repeat: repeat;
+  background-position: top;
+}
+
+@media (min-width:768px){
+  .custom-bg{
+    background-size: 33.33% 50%;
+  }
 }

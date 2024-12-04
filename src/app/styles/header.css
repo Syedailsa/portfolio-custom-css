@@ -1,0 +1,57 @@
+header{
+    background-color: #1f2937;
+}
+
+.header-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin: 40px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    color: #eeeeee;
+}
+
+/* logo part */
+
+.logo{
+    font-size: 36px;
+    margin-bottom: 12px;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 600;
+}
+
+/* navbar part */
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.navbar-link {
+    font-weight: 500;
+    font-size: large;
+    color: #eeeeee;
+    text-decoration: none;
+    transition: font-weight 0.3s ease;
+}
+
+.navbar-link:hover {
+    font-weight: 600;
+}
+
+.navbar-link.active {
+    font-weight: 600;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 640px){
+    .header-align{
+        flex-direction: column;
+        gap: 5px;
+    }
+}

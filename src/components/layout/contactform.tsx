@@ -1,12 +1,12 @@
 "use client"
 
+import '@/app/styles/contactForm.css'
 import { Send } from "lucide-react";
 import React from "react";
 import { useState } from "react";
 
 function Contactform() {
   {
-    // State for form data (optional if you plan to process the form later)
     const [formData, setFormData] = useState({
       name: "",
       email: "",
@@ -24,12 +24,12 @@ function Contactform() {
         <form
           action="https://formspree.io/f/mjkvbojj"
           method="POST"
-          className="space-y-6"
+          className="form"
         >
           {/* Name and Email Fields */}
-          <div className="flex gap-4">
-            <div className="w-1/2">
-              <label className="block text-sm font-semibold" htmlFor="name">
+          <div className="form-section">
+            <div className="name">
+              <label className="label" htmlFor="name">
                 Your name
               </label>
               <input
@@ -38,12 +38,12 @@ function Contactform() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full mt-1 p-3 bg-themeblack text-themewhite rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="input"
                 placeholder="Name"
               />
             </div>
-            <div className="w-1/2">
-              <label className="block text-sm font-semibold" htmlFor="email">
+            <div className="email">
+              <label className="label" htmlFor="email">
                 Your email
               </label>
               <input
@@ -52,7 +52,7 @@ function Contactform() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full mt-1 p-3 bg-themeblack text-themewhite rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="input"
                 placeholder="Email"
               />
             </div>
@@ -60,7 +60,7 @@ function Contactform() {
 
           {/* Message Field */}
           <div>
-            <label className="block text-sm font-semibold" htmlFor="message">
+            <label className="label mt" htmlFor="message">
               Your Message
             </label>
             <textarea
@@ -69,7 +69,7 @@ function Contactform() {
               value={formData.message}
               onChange={handleChange}
               rows={5}
-              className="w-full mt-1 p-3 bg-themeblack text-themewhite rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="input"
               placeholder="Message"
             ></textarea>
           </div>
@@ -77,7 +77,7 @@ function Contactform() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-themeblue hover:bg-teal-600 text-themewhite text-opacity-95 rounded-xl font-semibold py-3 transition duration-300 flex justify-center items-center gap-2"
+            className="submit-button mt"
           >
             Send Message
             <Send />

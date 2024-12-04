@@ -1,0 +1,18 @@
+button{
+    border-radius: 9999px;
+    border-style: none;
+    background-color: #393e46;
+    color: #eeeeee;
+    font-weight: bold;
+    padding: 15px;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.6));
+}
+
+button:hover{
+    background-color: rgba(57, 62, 70, 0.7);
+}
+

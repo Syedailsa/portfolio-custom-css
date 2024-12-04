@@ -1,0 +1,86 @@
+.hireMe{
+    border-radius: 9999px;
+    background-color: #00adb5;
+    color: #eeeeee;
+    font-weight: bold;
+    padding: 15px;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.6));
+}
+
+.hireMe:hover{
+    background-color: rgba(0, 173, 181, 0.7);
+}
+
+.text-white{
+    color: #eeeeee;
+}
+
+.text-blue{
+    color: #00ADB5;
+}
+
+/* Overlay for dialog */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Dialog Content */
+  .dialog-content {
+    background: rgb(57, 62, 70, 0.8);
+    color: #eeeeee;
+    border: rgb(238, 238, 238, 0.7) solid;
+    border-width: 2px;
+    width: 450px;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Dialog Header */
+  .dialog-header {
+   display: flex;
+   justify-content: space-between;
+  }
+  
+  .dialog-title {
+    font-size: 1.5rem;
+  }
+  
+  .dialog-description {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Close Button */
+  .close-button {
+    background: none;
+    border: none;
+    color: #eeeeee;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Technology Logos */
+  .tech-logos {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  
+
+

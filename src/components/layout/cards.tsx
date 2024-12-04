@@ -1,98 +1,113 @@
-import * as React from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import '@/app/styles/card.css'
 
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
+// Define the interface for a project
 export interface IProject {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
+  image: {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+  };
+  vercelurl: string;
+  githuburl: string;
+}
+
+// Example project data
+export const pData: IProject[] = [
+  {
+    title: "Creative Themed Calculator",
+    description:
+      "Creative and responsive pookie-themed calculator built on plain HTML, CSS, and TypeScript",
     image: {
-      src: string; 
-      alt: string; 
-      width?: number; 
-      height?: number; 
-    };
-    vercelurl: string; 
-    githuburl: string;
-  }
-  
-  export const pData: IProject[] = [
-    {
-      title: 'Creative Themed Calculator',
-      description:
-        'Creative and responsive pookie themed calculator built on plain HTML, CSS and Typescript',
-      image: {
-        src: '/calci-project.png',  
-        alt: 'Pookie Themed Calculator Screenshot', 
-        width: 400,  
-        height: 300,  
-      },
-      vercelurl: 'https://pookie-themed-calculator.vercel.app/',
-      githuburl: 'https://github.com/Syedailsa/pookie-calci.git'
+      src: "/calci-project.png",
+      alt: "Pookie Themed Calculator Screenshot",
+      width: 310,
+      height: 150,
     },
-    {
-        title: 'Figma Design Clone',
-      description:
-        'Figma design pixel perfect and responsive clone built on plain Next.Js, Tailwind CSS',
-      image: {
-        src: '/figma-project.png',  
-        alt: 'figma clone', 
-        width: 400,  
-        height: 300,  
-      },
-      vercelurl: 'https://vercel.com/syedailsas-projects/figma-to-next',
-      githuburl: 'https://github.com/Syedailsa/figma-to-next.git'
-    }
-  ];
-  
+    vercelurl: "https://pookie-themed-calculator.vercel.app/",
+    githuburl: "https://github.com/Syedailsa/pookie-calci.git",
+  },
+  {
+    title: "Figma Design Clone",
+    description:
+      "Figma design pixel-perfect and responsive clone built on plain Next.js, Tailwind CSS",
+    image: {
+      src: "/figma-project.png",
+      alt: "Figma clone",
+      width: 310,
+      height: 150,
+    },
+    vercelurl: "https://vercel.com/syedailsas-projects/figma-to-next",
+    githuburl: "https://github.com/Syedailsa/figma-to-next.git",
+  },
+];
 
-export function Cards({ pData }:{ pData: IProject[] }) {
+// Main Cards component
+export function Cards({ pData }: { pData: IProject[] }) {
   return (
-    <div className="md:lg:flex justify-center items-center gap-10 m-20">
-        {pData.map((project) => {
-
-            return(
-            <div className="flex justify-center  select-none" key={project.title}>
-              <Card className="w-[350px] text-themewhite bg-themegray bg-opacity-40 hover:bg-opacity-80 mb-4">
-                <CardHeader></CardHeader>
-                <CardContent>
-
-                  <div className="grid w-full items-start gap-4">
-                    
-                  <Link href={project.vercelurl}><Image src={project.image.src} alt={project.image.alt} height={project.image.height} width={project.image.width} className="rounded-xl no-select" /> </Link>
-                   
-                  </div>
-                  <CardTitle className="mt-4 mb-4">{project.title}</CardTitle>
-                  <CardDescription >{project.description}</CardDescription>
-
-                </CardContent>
-          
-                <CardFooter>
-                  <div className="flex gap-4 rounded-xl">
-                    <Button>
-                      <Link href={project.githuburl}>
-                        Github repo
-                      </Link>
-                    </Button>
-                    <Button>
-                      <Link href={project.vercelurl}>Vercel link</Link>
-                    </Button>
-                  </div>
-                </CardFooter>
-              </Card>
-            </div>    
-            )
-
-        })}
+    <div className="main" style={{ display: "flex", position: 'absolute', justifyContent: "center", gap: "20px", margin: "20px", padding: '15px' }}>
+      {pData.map((project) => (
+        <div
+          key={project.title}
+          className="card" 
+          style={{
+            width: "350px",
+            padding: "20px",
+            backgroundColor: "rgba(57, 62, 70, 0.4)",
+            borderRadius: "8px",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <div>
+            <Link href={project.vercelurl}>
+              <Image
+                src={project.image.src}
+                alt={project.image.alt}
+                width={project.image.width}
+                height={project.image.height}
+                style={{ borderRadius: "8px", cursor: "pointer" }}
+              />
+            </Link>
+          </div>
+          <h3 style={{ marginTop: "15px", marginBottom: "10px", fontSize: "18px", color: "#eeeeee" }}>{project.title}</h3>
+          <p style={{ marginBottom: "15px", fontSize: "14px", color: "#eeeeee" }}>{project.description}</p>
+          <div style={{ display: "flex", gap: "10px" }}>
+            <Link href={project.githuburl}>
+              <button
+                style={{
+                  padding: "10px 20px",
+                  backgroundColor: "#00ADB5",
+                  color: "#eeeeee",
+                  border: "none",
+                  borderRadius: "8px",
+                  cursor: "pointer",
+                }}
+              >
+                Github Repo
+              </button>
+            </Link>
+            <Link href={project.vercelurl}>
+              <button
+                style={{
+                  padding: "10px 20px",
+                  backgroundColor: "#00ADB5",
+                  color: "#eeeeee",
+                  border: "none",
+                  borderRadius: "8px",
+                  cursor: "pointer",
+                }}
+              >
+                Vercel Link
+              </button>
+            </Link>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

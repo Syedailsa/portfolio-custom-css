@@ -1,15 +1,16 @@
 import Link from 'next/link'
+import './../../app/styles/links.css'
 import React from 'react'
 import { GithubIcon, Linkedin, Mail } from "lucide-react";
 
 export default function Links() {
   return (
     <div>
-      <ul className="text-themeblue mb-4 flex gap-3 no-select">
+      <ul className="icons no-select">
            <li>
             <Link
               href="mailto:ilsasyeda24@gmail.com"
-              className="flex items-center space-x-2"
+              className="style"
             >
               <Mail />
             </Link>
@@ -18,7 +19,7 @@ export default function Links() {
           <li>
             <Link
               href="https://www.linkedin.com/in/ilsa-ubaid-0a7950272/"
-              className="flex items-center space-x-2"
+              className="style"
             >
               <Linkedin />
             </Link>
@@ -27,7 +28,7 @@ export default function Links() {
           <li>
             <Link
               href="https://github.com/Syedailsa"
-              className="flex items-center space-x-2"
+              className="style"
             >
               <GithubIcon />
             </Link>
